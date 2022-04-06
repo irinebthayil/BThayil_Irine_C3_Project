@@ -5,7 +5,6 @@ import org.mockito.Mockito;
 import java.time.LocalTime;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.verify;
 
 class RestaurantTest {
     Restaurant restaurant;
