@@ -78,17 +78,17 @@ class RestaurantTest {
     @Test
     public void selecting_zero_items_from_menu_should_return_order_value_0()
     {
-        List<String> items = new ArrayList<String>();
-        restaurant.getOrderValue(items);
+        List<String> selectedItemNames = new ArrayList<String>();
+        restaurant.getOrderValue(selectedItemNames);
     }
 
     @Test
     public void selecting_two_items_of_price_119_and_269_from_menu_should_return_order_value_388()
     {
-        List<String> items = new ArrayList<String>();
-        items.add("Sweet corn soup");
-        items.add("Vegetable lasagne");
-        restaurant.getOrderValue(items);
+        List<String> selectedItemNames = new ArrayList<String>();
+        selectedItemNames.add("Sweet corn soup");
+        selectedItemNames.add("Vegetable lasagne");
+        restaurant.getOrderValue(selectedItemNames);
     }
     //<<<<<<<<<<<<<<<<<<<<<<<ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
