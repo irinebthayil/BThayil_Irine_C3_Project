@@ -80,6 +80,8 @@ class RestaurantTest {
     {
         List<String> selectedItemNames = new ArrayList<String>();
         int orderValue = restaurant.getOrderValue(selectedItemNames);
+        assertNotNull(orderValue);
+        assertEquals(orderValue, 0);
     }
 
     @Test
@@ -89,6 +91,8 @@ class RestaurantTest {
         selectedItemNames.add("Sweet corn soup");
         selectedItemNames.add("Vegetable lasagne");
         int orderValue = restaurant.getOrderValue(selectedItemNames);
+        assertNotNull(orderValue);
+        assertEquals(orderValue, 388);
     }
     //<<<<<<<<<<<<<<<<<<<<<<<ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
