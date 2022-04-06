@@ -79,7 +79,7 @@ class RestaurantTest {
     public void selecting_zero_items_from_menu_should_return_order_value_0()
     {
         List<String> selectedItemNames = new ArrayList<String>();
-        restaurant.getOrderValue(selectedItemNames);
+        int orderValue = restaurant.getOrderValue(selectedItemNames);
     }
 
     @Test
@@ -88,7 +88,7 @@ class RestaurantTest {
         List<String> selectedItemNames = new ArrayList<String>();
         selectedItemNames.add("Sweet corn soup");
         selectedItemNames.add("Vegetable lasagne");
-        restaurant.getOrderValue(selectedItemNames);
+        int orderValue = restaurant.getOrderValue(selectedItemNames);
     }
     //<<<<<<<<<<<<<<<<<<<<<<<ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
